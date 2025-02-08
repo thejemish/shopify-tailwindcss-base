@@ -1,0 +1,87 @@
+# Shopify Theme with Tailwind CSS
+
+A modern, customizable Shopify theme built with Tailwind CSS that provides a solid foundation for creating responsive e-commerce experiences with easy-to-use customization options.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (Latest LTS version recommended)
+- [Shopify CLI](https://shopify.dev/docs/api/shopify-cli)
+- [Git](https://git-scm.com/)
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone [your-repository-url]
+cd [theme-directory]
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+## Development
+
+This theme includes several npm scripts to help with development:
+
+```bash
+# Start theme development server
+npm run dev
+
+# Watch and compile Tailwind CSS
+npm run css
+
+# Watch and compile minified Tailwind CSS
+npm run css:min
+
+# Run theme check
+npm run theme:check
+```
+
+## Theme Structure
+
+```
+├── assets/
+│   ├── input.css     # Tailwind CSS input file
+│   └── style.css     # Compiled CSS output
+├── config/
+│   └── settings_schema.json  # Theme settings
+├── layout/
+├── sections/
+├── snippets/
+├── templates/
+└── package.json
+```
+
+## Theme Customization
+
+### Brand Settings
+- Logo customization with width control
+- Favicon support
+- Brand colors and accent colors
+
+### Color System
+The theme includes a comprehensive color system with:
+- Primary colors for key components
+- Secondary colors for supporting elements
+- Accent colors
+- Surface colors
+- Custom gradient support
+
+### Typography
+- Customizable heading and body fonts
+- Support for system fonts
+- Font performance optimization options
+
+### Currency Display
+- Optional currency code display
+- Consistent pricing display across cart and checkout
+
+## Development Scripts
+
+- `npm run dev`: Starts the Shopify theme development server
+- `npm run css`: Watches and compiles Tailwind CSS in development mode
+- `npm run css:min`: Watches and compiles Tailwind CSS in production mode (minified)
+- `npm run theme:check`: Runs Shopify Theme Check for best practices and issues

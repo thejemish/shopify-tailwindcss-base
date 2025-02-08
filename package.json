@@ -1,0 +1,20 @@
+{
+  "name": "template-minimal",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "shopify theme dev --store your-store-name",
+    "css": "npx @tailwindcss/cli -i ./assets/input.css -o ./assets/style.css --watch",
+    "css:min": "npx @tailwindcss/cli -i ./assets/input.css -o ./assets/style.css --minify --watch",
+    "theme:check": "shopify theme check"
+  },
+  "dependencies": {
+    "@shopify/cli": "^3.75.0",
+    "@tailwindcss/cli": "^4.0.4",
+    "tailwindcss": "^4.0.4"
+  },
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.8.0",
+    "prettier": "^3.4.2"
+  }
+}

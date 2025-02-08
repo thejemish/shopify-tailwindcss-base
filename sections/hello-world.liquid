@@ -1,0 +1,48 @@
+<section class="relative w-full h-screen flex items-center justify-center bg-white">
+  <div class="container mx-auto px-4 text-center">
+    {% if section.settings.heading != blank %}
+      <h1 class="text-6xl font-bold tracking-tight leading-none animate-fade-in">
+        {{ section.settings.heading }}
+      </h1>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Hello World",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Hello World"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hello World",
+      "settings": {
+        "heading": "Hello World"
+      }
+    }
+  ]
+}
+{% endschema %}
