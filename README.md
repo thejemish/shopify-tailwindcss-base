@@ -50,9 +50,12 @@ npm run theme:check
 ├── config/
 │   └── settings_schema.json  # Theme settings
 ├── layout/
+├── locales/
 ├── sections/
 ├── snippets/
 ├── templates/
+    ├── customers/
+    └── index.json
 └── package.json
 ```
 
