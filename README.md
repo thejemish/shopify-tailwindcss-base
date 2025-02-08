@@ -13,8 +13,8 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
-cd [theme-directory]
+git clone https://github.com/thejemish/shopify-tailwindcss-base
+cd shopify-tailwindcss-base
 ```
 
 2. Install dependencies:
@@ -46,6 +46,7 @@ npm run theme:check
 ├── assets/
 │   ├── input.css     # Tailwind CSS input file
 │   └── style.css     # Compiled CSS output
+│   blocks
 ├── config/
 │   └── settings_schema.json  # Theme settings
 ├── layout/
@@ -54,30 +55,6 @@ npm run theme:check
 ├── templates/
 └── package.json
 ```
-
-## Theme Customization
-
-### Brand Settings
-- Logo customization with width control
-- Favicon support
-- Brand colors and accent colors
-
-### Color System
-The theme includes a comprehensive color system with:
-- Primary colors for key components
-- Secondary colors for supporting elements
-- Accent colors
-- Surface colors
-- Custom gradient support
-
-### Typography
-- Customizable heading and body fonts
-- Support for system fonts
-- Font performance optimization options
-
-### Currency Display
-- Optional currency code display
-- Consistent pricing display across cart and checkout
 
 ## Development Scripts
 
