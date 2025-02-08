@@ -46,7 +46,7 @@ npm run theme:check
 ├── assets/
 │   ├── input.css     # Tailwind CSS input file
 │   └── style.css     # Compiled CSS output
-│   blocks
+│   blocks/
 ├── config/
 │   └── settings_schema.json  # Theme settings
 ├── layout/
